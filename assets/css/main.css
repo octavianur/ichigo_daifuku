@@ -1,0 +1,68 @@
+:root{
+   --font-default: "DM Serif Display" , sans-serif;
+   --color-background: #FCFCFC;
+   --color-primary: #820000;
+   --color-secondary: #364051;
+   --color-text100: #1D1D1D;
+   --color-text80: rgba(29, 29, 29, 0.8);
+   --color-text50: rgba(29, 29, 29, 0.5);
+   scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-default);
+    color: var(--color-background);
+    overflow-x: hidden;
+  }
+
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f5f6f7;
+  }
+  
+  .section-header {
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  
+  .section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    color: #2e3135;
+  }
+  
+  .section-header h2:before,
+  .section-header h2:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--color-primary);
+    display: inline-block;
+  }
+  
+  .section-header h2:before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section-header h2:after {
+    margin: 0 0 10px 15px;
+  }
+  
+  .section-header p {
+    margin: 0 auto 0 auto;
+  }
+  
+  @media (min-width: 1199px) {
+    .section-header p {
+      max-width: 60%;
+    }
+  }
