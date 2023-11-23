@@ -1,68 +1,83 @@
-:root{
-   --font-default: "DM Serif Display" , sans-serif;
-   --color-background: #FCFCFC;
-   --color-primary: #820000;
-   --color-secondary: #364051;
-   --color-text100: #1D1D1D;
-   --color-text80: rgba(29, 29, 29, 0.8);
-   --color-text50: rgba(29, 29, 29, 0.5);
-   scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
+
+:root {
+  --font-default: "DM Serif Display", sans-serif;
+  --color-background: #FCFCFC;
+  --color-primary: #820000;
+  --color-secondary: #364051;
+  --color-text100: #1D1D1D;
+  --color-text80: rgba(29, 29, 29, 0.8);
+  --color-text50: rgba(29, 29, 29, 0.5);
+  scroll-behavior: smooth;
+
+  --primary-mochi-700: #65342F;
+  --primary-mochi-600: #B6564C;
+  --secondary-mochi: #6e3720;
+  --button-mochi: #902C35;
+  --primary-mochi-2: #98453D;
 }
 
 body {
-    font-family: var(--font-default);
-    color: var(--color-background);
-    overflow-x: hidden;
-  }
+  font-family: var(--font-default);
+  color: var(--color-background);
+  overflow-x: hidden;
+}
 
 
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-    padding: 80px 0;
-    overflow: hidden;
-  }
-  
-  .section-bg {
-    background-color: #f5f6f7;
-  }
-  
-  .section-header {
-    text-align: center;
-    padding-bottom: 70px;
-  }
-  
-  .section-header h2 {
-    font-size: 32px;
-    font-weight: 700;
-    position: relative;
-    color: #2e3135;
-  }
-  
-  .section-header h2:before,
-  .section-header h2:after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    background: var(--color-primary);
-    display: inline-block;
-  }
-  
-  .section-header h2:before {
-    margin: 0 15px 10px 0;
-  }
-  
-  .section-header h2:after {
-    margin: 0 0 10px 15px;
-  }
-  
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+
+.order-btn button {
+  width: 144px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: var(--button-mochi) !important;
+  border: none;
+  transition: all ease 0.2s;
+}
+
+.order-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.order-btn button:hover {
+  scale: 1.05;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary-mochi-700 {
+  color: var(--primary-mochi-700);
+  font-weight: 600;
+}
+
+.primary-mochi-600 {
+  color: var(--primary-mochi-600);
+  font-weight: 500;
+}
+
+.text-secondary-700 {
+  color: var(--secondary-mochi);
+}
+
+
+@media (min-width: 1199px) {
   .section-header p {
-    margin: 0 auto 0 auto;
+    max-width: 60%;
   }
-  
-  @media (min-width: 1199px) {
-    .section-header p {
-      max-width: 60%;
-    }
-  }
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ichigo Daifuku</title>
-    
+
     <!-- Favicons -->
     <link href="assets/img/logo-mochi.png" rel="icon">
     <link href="assets/img/logo-mochi.png" rel="daifuku-icon">
@@ -12,7 +13,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Vendor -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,12 +24,204 @@
 
     <!-- Main CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
-<body>
 
+<body class="bg-white mb-0 pb-0">
+    <header data-bs-theme="light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white">
+            <div class="container">
+                <img src="assets/img/logo-mochi.png" alt="Logo Ichigo Daifuku" width="70">
+                <a class="navbar-brand ms-2" href="#home">
+                    <h3 style="color: #65342F; font-weight: 700;">Ichigo Daifuku</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ichigo Daifuku</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                            style="font-family: 'Poppins', sans-serif; font-weight: 600;">
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item" style="background-color: var(--button-mochi); border-radius: 8px;">
+                                <a class="nav-link text-white p-2" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <!-- about -->
+    <section id="about">
+        <div class="my-3">
+            <div class="row">
+                <div class="col-md-8 p-5 align-self-center">
+                    <h1 class="display-4 primary-mochi-700 pe-4 mb-5">Rasakan Kelezatan Kreatif, Sajikan Tradisi di
+                        Setiap Gigitan.</h1>
+                    <p class="fs-4 text-secondary pe-5 mb-5">Ichigo Daifuku siap mengajak Anda menjelajahi dunia cita
+                        <br> rasa yang penuh inspirasi.</p>
+                    <div class="order-btn">
+                        <button type="button" class="btn btn-primary"><a href="https://wa.me/6282152100767">Order Now</a></button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/hero.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Content -->
+    <section id="content">
+        <div class="py-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/content.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 align-self-center">
+                    <h1 class="display-4 primary-mochi-600 px-4">Rasakan Kelezatan Mochi Ichigo Daifuku.</h1>
+                    <p class="text-secondary fs-5 mb-5 px-4">Mochi Ichigo Daifuku memukau dengan harmoni lembut mochi, paduan
+                        manis stroberi segar, dan rahasia cita rasa unik. Setiap gigitan memperkenalkan Anda pada
+                        pengalaman lezat yang tak terlupakan. Rasakan kelezatan yang berkarakter dan nikmati perpaduan
+                        kreativitas yang memikat dalam setiap biji mochi yang kami hasilkan. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Produk -->
+    <div id="keunggulan">
+        <div class="container">
+            <p class="fs-5 text-center" style="color: black;">Keunggulan</p>
+            <h1 class="primary-mochi-600 text-center mb-5">Mengapa harus Ichigo Daifuku</h1>
+            <div class="row justify-content-center d-flex">
+                <div class="card col-md-4 mb-3 ms-2 me-2" style="width: 22rem;">
+                    <div class="card-body">
+                        <img src="assets/img/icon-park-outline_transaction-order.png" class="img-fluid mb-3" alt=""
+                            width="70">
+                        <h5 class="card-title text-secondary-700">Rasa Unik</h5>
+                        <p class="card-text text-secondary">Ichigo Daifuku menggabungkan lembutnya mochi dengan kelezatan stroberi segar, menciptakan paduan rasa yang unik dan istimewa.</p>
+                    </div>
+                </div>
+                <div class="card col-md-4 mb-3 ms-2 me-2" style="width: 22rem;">
+                    <div class="card-body">
+                        <img src="assets/img/icon-park-outline_communication.png" class="img-fluid mb-3" alt=""
+                            width="70">
+                        <h5 class="card-title text-secondary-700">Kualitas Tinggi</h5>
+                        <p class="card-text text-secondary">Kami mengutamakan kualitas dalam setiap aspek, dari bahan baku hingga proses produksi, untuk memberikan produk terbaik kepada pelanggan.</p>
+                    </div>
+                </div>
+                <div class="card col-md-4 mb-3 ms-2 me-2" style="width: 22rem;">
+                    <div class="card-body">
+                        <img src="assets/img/icon-park-outline_datetime.png" class="img-fluid mb-3" alt=""
+                            width="70">
+                        <h5 class="card-title text-secondary-700">Stroberi Segar</h5>
+                        <p class="card-text text-secondary">Dengan penggunaan stroberi segar, setiap biji mochi menghadirkan kelezatan buah yang segar dan memikat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- partner -->
+    <section id="menu">
+        <div class="container">
+            <div class="row justify-content-center mt-5 mb-5">
+                <p class="fs-5 text-center" style="color: black;">Produk Kami</p>
+                <h1 class="col-md-12 primary-mochi-600 text-center mb-3">Jelajahi Kelezatan Tanpa Batas dengan Ichigo Daifuku</h1>
+            </div>
+            <div class="row justify-content-center d-flex">
+                <div class="col-md-3 text-center mb-3 me-2">
+                    <img src="assets/img/product-3.png" class="img-fluid" alt="" width="250">
+                    <h5 class="text-secondary-700">The Ichi “Personal”</h5>
+                    <p class="text-secondary">Rp 30.000</p>
+                </div>
+                <div class="col-md-3 text-center mb-3 me-2">
+                    <img src="assets/img/product-2.png" class="img-fluid" alt="" width="250">
+                    <h5 class="text-secondary-700">The Ichi “Happiness”</h5>
+                    <p class="text-secondary">Rp 55.000</p>
+                </div>
+                <div class="col-md-3 text-center mb-3">
+                    <img src="assets/img/product-1.png" class="img-fluid" alt="" width="250">
+                    <h5 class="text-secondary-700">Gift Edition</h5>
+                    <p class="text-secondary">Rp 30.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order -->
+    <div id="order">        
+        <div class="row">
+            <div class="col-md-7 p-5 align-self-center">
+                <h1 class="display-4 primary-mochi-600 ps-5 mb-4">Layanan Pelanggan Ichigo Daifuku</h1>
+                <p class="fs-6 text-secondary ps-5 mb-4"> Hubungi kami sekarang untuk menjalin hubungan yang lebih erat dan wujudkan kelezatan bersama Ichigo Daifuku</p>
+                <div class="order-btn ps-5">
+                    <button type="button" class="btn btn-primary"><a href="https://wa.me/6282152100767">Pesan Sekarang</a></button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="assets/img/order.png" class="img-fluid" alt="">
+            </div>
+        </div>        
+    </div>
+
+    <!-- contact -->
+    <section id="contact" class="text-white text-center pb-5" style="background-color: var(--primary-mochi-2);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="col-md-8 mb-5">Jadikan setiap momen berkesan dengan layanan terbaik dari kami.</h1>
+                <p class="mb-5">Kami siap menerima kritik dan saran Anda</p>
+                <div class="row justify-content-center col-md-6 mb-3">
+                    <a class="col-1 img-fluid me-3" href="https://instagram.com/ichigodaifuku_mlg"><img
+                            src="assets/img/logo-IG.png" alt="Instagram" width="50rem"></a>
+                    <a class="col-1 img-fluid me-3" href="https://wa.me/6282152100767"><img
+                            src="assets/img/logo-WA.png" alt="whatsapp" width="50rem"></a>
+                    <a class="col-1 img-fluid me-3" href=""><img 
+                            src="assets/img/logo-Tiktok.png" alt="" width="50rem"></a>
+                </div>
+                <p>Jl. Griya Shanta Blok L No. 224, Mojolangu, <br> Kec. Lowokwaru, Malang City, East Java 65141</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="bg-white">
+        <div class="cotainer pt-4 pb-2">
+            <p class="text-center text-secondary-700">© Copyright 2023 Ichigo Daifuku, Malang</span></p>
+        </div>
+    </footer>    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
+    
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    navLinks.forEach(innerLink => {
+                        innerLink.classList.remove('active');
+                    });
+    
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
 
     <!-- Vendor -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
